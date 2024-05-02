@@ -1,0 +1,4 @@
+api:
+  forecast:
+    endpoint: http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst
+    key: {Your Service Key}

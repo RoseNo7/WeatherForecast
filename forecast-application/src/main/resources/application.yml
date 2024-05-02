@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    group:
+      default:
+        - domain
+        - fetcher
+      local:
+        - domain-local
+        - fetcher-local
+      dev:
+        - domain-dev
+        - fetcher-dev

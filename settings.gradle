@@ -1,2 +1,5 @@
 rootProject.name = 'WeatherForecast'
+include 'forecast-application'
+include 'forecast-domain'
+include 'forecast-fetcher'
 
