@@ -59,11 +59,12 @@ public class ForecastController {
 
         ApiResponse<Object> apiResponse = new ApiResponse<>();
         apiResponse.setCode(HttpStatus.OK.value());
-        apiResponse.setStatus(ApiResult.SUCCESS.status());
 
         if (isSucceed) {
+            apiResponse.setStatus(ApiResult.SUCCESS.status());
             apiResponse.setMessage("단기 예보가 저장되었습니다.");
         } else {
+            apiResponse.setStatus(ApiResult.FAILED.status());
             apiResponse.setMessage("단기 예보가 이미 존재합니다.");
         }
 
